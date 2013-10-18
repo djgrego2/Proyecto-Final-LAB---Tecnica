@@ -31,14 +31,21 @@ public class Conjunto {
     }
     
     Set union(Set Parametro) {
-        
-        vacio.addAll(Parametro);
-        return vacio;
+        Set Salida = new TreeSet(vacio);
+        Salida.addAll(Parametro);
+        return Salida;
     }
     
     Set interseccion(Set Parametro) {
-        vacio.retainAll(Parametro);
-        return vacio;
+        Set Salida = new TreeSet(vacio);
+        Salida.retainAll(Parametro);
+        return Salida;
+    }
+    
+    Set diferencia(Set Parametro) {
+        Set Salida = new TreeSet(vacio);
+        Salida.removeAll(Parametro);
+        return Salida;
     }
    
 }
