@@ -29,5 +29,11 @@ public class Conjunto {
         }
         return Salida;
     }
+    
+    Set union(Set Parametro) {
+        
+        vacio.addAll(Parametro);
+        return vacio;
+    }
    
 }
