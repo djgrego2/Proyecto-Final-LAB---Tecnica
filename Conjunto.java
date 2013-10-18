@@ -47,5 +47,10 @@ public class Conjunto {
         Salida.removeAll(Parametro);
         return Salida;
     }
+    
+    void desplegar()
+    {
+        System.out.println("Conjunto: " + vacio);
+    }
    
 }
