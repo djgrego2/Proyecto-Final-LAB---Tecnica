@@ -35,5 +35,10 @@ public class Conjunto {
         vacio.addAll(Parametro);
         return vacio;
     }
+    
+    Set interseccion(Set Parametro) {
+        vacio.retainAll(Parametro);
+        return vacio;
+    }
    
 }
