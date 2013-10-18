@@ -18,5 +18,16 @@ public class Conjunto {
     {
         return elementos.length;
     }
+    
+    int cardinal()
+    {
+        int Salida = 0, Contador;
+        for(Contador = 0; Contador < dimension(); Contador++)
+        { 
+            if(elementos[Contador] != null)
+                Salida++;
+        }
+        return Salida;
+    }
    
 }
