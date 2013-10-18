@@ -12,6 +12,11 @@ import java.util.*;
 public class Conjunto {
     
     String elementos[] = new String[10];
-    public Set<String> vacio = new TreeSet<>(Arrays.asList(elementos));
+    public  Set<String> vacio = new TreeSet<>(Arrays.asList(elementos));
+    
+    int dimension()
+    {
+        return elementos.length;
+    }
    
 }
