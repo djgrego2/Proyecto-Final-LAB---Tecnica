@@ -3,6 +3,7 @@
  * and open the template in the editor.
  */
 package ProyectoFinal;
+import java.util.*;
 
 /**
  *
@@ -10,4 +11,7 @@ package ProyectoFinal;
  */
 public class Conjunto {
     
+    String elementos[] = new String[10];
+    public Set<String> vacio = new TreeSet<>(Arrays.asList(elementos));
+   
 }
